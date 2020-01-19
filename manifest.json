@@ -1,0 +1,32 @@
+{
+    "author": "Nabrizzy",
+    "name": "Tab Mover",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "Move your active Tab with shortcuts!",
+    "permissions": ["activeTab", "tabs", "declarativeContent"],
+    "icons": {
+        "16": "img/icon16.png",
+        "32": "img/icon32.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "commands": {
+        "tabLeft": {
+            "description": "Move active tab left"
+        },
+        "tabRight": {
+            "description": "Move active tab right"
+        },
+        "dockLeft": {
+            "description": "Dock active tab to left"
+        },
+        "dockRight": {
+            "description": "Dock active tab to right"
+        }
+    }
+}
